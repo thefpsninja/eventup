@@ -19,9 +19,16 @@
           <b> EventUp</b>
         </a>
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item m-1 border rounded border-secondary"> <a class="nav-link bg-secondary text-white" href="#">Skapa Event</a> </li>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eventModal">
+          Skapa Event </button>
+        <!-- Php Code To Create Events With A Modal --> <? include 'createEvent.php'; ?>
         </ul>
-        <a class="btn btn-default navbar-btn btn-secondary text-white" data-toggle="modal">Login</a><a class="btn btn-default navbar-btn text-white btn-primary">Registrera<br></a>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
+        Login </button> 
+        <!-- Php Code To Login With A Modal --> <? include 'login.php'; ?>
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#registerModal">
+        Registrera </button> 
+        <!-- Php Code To Register With A Modal --><? include'register.php'; ?>
       </div>
     </div>
   </nav>
