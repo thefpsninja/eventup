@@ -10,6 +10,7 @@
 </head>
 
 <body>
+<!-- Php Code To Create Database And Tables --> <? include 'database.php'; ?>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar12">
         <span class="navbar-toggler-icon"></span>
