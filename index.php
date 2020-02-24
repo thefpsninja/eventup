@@ -47,39 +47,10 @@
         </div>
       </div>
     </div>
-    <div class="container d-flex">
-      <div class="row flex-grow-0" style="">
-        <div class="col-md-11" style="">
-          <ul class="list-group">
-            <li class="list-group-item d-flex justify-content-between align-items-center">MALMÖ: Dropin Party! BBQ&nbsp;<span class="badge badge-pill badge-primary"></span><span class="badge badge-pill badge-primary">25 Deltagare</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">LUND: Cosplay Convention&nbsp;<span class="badge badge-pill badge-primary"></span><span class="badge badge-pill badge-primary">634 Deltagare</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center" style="">HELSINGBORG: Tabeltop Tournament! WARHAMMER&nbsp;<span class="badge badge-pill badge-primary">159 Deltagare</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center" style="">HELSINGBORG: Tabeltop Tournament! WARHAMMER&nbsp;<span class="badge badge-pill badge-primary">159 Deltagare</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center" style="">HELSINGBORG: Tabeltop Tournament! WARHAMMER&nbsp;<span class="badge badge-pill badge-primary">159 Deltagare</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center" style="">HELSINGBORG: Tabeltop Tournament! WARHAMMER&nbsp;<span class="badge badge-pill badge-primary">159 Deltagare</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center" style="">HELSINGBORG: Tabeltop Tournament! WARHAMMER&nbsp;<span class="badge badge-pill badge-primary">159 Deltagare</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center" style="">HELSINGBORG: Tabeltop Tournament! WARHAMMER&nbsp;<span class="badge badge-pill badge-primary">159 Deltagare</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center" style="">HELSINGBORG: Tabeltop Tournament! WARHAMMER&nbsp;<span class="badge badge-pill badge-primary">159 Deltagare</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center" style="">HELSINGBORG: Tabeltop Tournament! WARHAMMER&nbsp;<span class="badge badge-pill badge-primary">159 Deltagare</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center" style="">HELSINGBORG: Tabeltop Tournament! WARHAMMER&nbsp;<span class="badge badge-pill badge-primary">159 Deltagare</span></li>
-          </ul>
-        </div>
-      </div>
-      <div class="row" style="">
-        <div class="col-md-11" style="">
-          <ul class="list-group">
-            <li class="list-group-item d-flex justify-content-between align-items-center">MALMÖ: Dropin Party! BBQ&nbsp;<span class="badge badge-pill badge-primary"></span><span class="badge badge-pill badge-primary">25 Deltagare</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">LUND: Cosplay Convention&nbsp;<span class="badge badge-pill badge-primary"></span><span class="badge badge-pill badge-primary">634 Deltagare</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center" style="">HELSINGBORG: Tabeltop Tournament! WARHAMMER&nbsp;<span class="badge badge-pill badge-primary">159 Deltagare</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center" style="">HELSINGBORG: Tabeltop Tournament! WARHAMMER&nbsp;<span class="badge badge-pill badge-primary">159 Deltagare</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center" style="">HELSINGBORG: Tabeltop Tournament! WARHAMMER&nbsp;<span class="badge badge-pill badge-primary">159 Deltagare</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center" style="">HELSINGBORG: Tabeltop Tournament! WARHAMMER&nbsp;<span class="badge badge-pill badge-primary">159 Deltagare</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center" style="">HELSINGBORG: Tabeltop Tournament! WARHAMMER&nbsp;<span class="badge badge-pill badge-primary">159 Deltagare</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center" style="">HELSINGBORG: Tabeltop Tournament! WARHAMMER&nbsp;<span class="badge badge-pill badge-primary">159 Deltagare</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center" style="">HELSINGBORG: Tabeltop Tournament! WARHAMMER&nbsp;<span class="badge badge-pill badge-primary">159 Deltagare</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center" style="">HELSINGBORG: Tabeltop Tournament! WARHAMMER&nbsp;<span class="badge badge-pill badge-primary">159 Deltagare</span></li>
-          </ul>
-        </div>
+    <div class="container">
+      <div id="accordion" class="min-vh-100 container" style=""> 
+      <? include 'printEvent.php'; ?>
+
       </div>
     </div>
   </div>
