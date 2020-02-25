@@ -16,7 +16,29 @@ foreach($eventPosts as $event) :
     if($event['eventName']) : ?>
     <div class="w-75 view overlay">
       <li type="button" class="list-group-item d-flex justify-content-between align-items-center" data-toggle="collapse" href="#collapse<? echo $event['id']; ?>">
-      <? echo $event['eventName']; ?><span class="badge badge-pill badge-primary"></span><span class="badge badge-pill badge-primary">25 Deltagare</span> </li>
+      <? echo $event['eventName']; ?><span class="badge badge-pill badge-primary"></span><span class="badge badge-pill badge-primary" data-toggle="dropdown">
+      <? include 'ParticipantCounter.php'; ?> Deltagare <br> Visa Info
+      <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+        <li>
+        <?
+          require('database.php');
+          $sql = "SELECT * FROM participant";
+          $stmt = $conn->prepare($sql);
+          $stmt->execute();
+          $participants = $stmt->fetchAll(PDO::FETCH_ASSOC);
+          ?>
+          <?
+          $amount = 0;
+          foreach($participants as $participant) : 
+              if($event['id'] == $participant['eventID']) : ?>
+                  Namn: <? echo $participant['participantName']; ?> <br>
+                  Email: <? echo $participant['participantEmail']; ?><br><br>
+                  <? endif; ?>
+          <? endforeach; ?>
+          </li>
+        </ul>
+      </span> </li>
     <div id="collapse<? echo $event['id']; ?>" class="collapse" data-parent="#accordion">
       <div class="list-group-item">
         <img src="<? 
