@@ -16,8 +16,9 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbar12"> <a class="navbar-brand d-none d-md-block" href="index.php">
-          <i class="fa d-inline fa-lg fa-circle"></i>
-          <b> EventUp</b>
+      <img src="images/logotype/100h/logotypeEventUp.png" alt="logotype EventUp" style="height:50px";>
+          <!-- <i class="fa d-inline fa-lg fa-circle"></i> -->
+          <!-- <b> EventUp</b> -->
         </a>
         <ul class="navbar-nav mx-auto">
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eventModal">
