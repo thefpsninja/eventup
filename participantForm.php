@@ -1,4 +1,6 @@
-<section class="showcase"></section>
+
+
+<!-- <section class="showcase"></section> -->
 
 
 <div class="contact-clean">
@@ -30,3 +32,56 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         </div>
     </form>
 </div>
+
+
+
+<!-- START insert data into participant-table -->
+
+
+
+<?
+// borjan på test av en annan kod...
+require ('database.php');
+try {
+$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+// set the PDO error mode to exception
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$sql = "INSERT INTO participant (participantName, participantEmail, eventID)
+VALUES (:participantName, :participantEmail, :eventID)";
+
+// use exec() because no results are returned
+$conn->exec($sql);
+echo "New record created successfully";
+}
+catch(PDOException $e)
+{
+echo $sql . "
+" . $e->getMessage();
+}
+// slut på test
+
+?>
+
+<?php
+
+/* 
+
+if($conn->connect_error){
+    echo " Oops! You have an ERROR ";
+} else {
+    echo " Yes! A new participant was added! ";
+
+
+$sql = "INSERT INTO participant (id, participantName, participantEmail, eventID)
+VALUES (:id, :participantName, :participantEmail, :eventID)";
+
+$stmt = $conn->prepare($sql);
+
+$stmt->bindParam (':id', $_POST['id']);
+$stmt->bindParam (':participantName', $_POST['participantName']);
+$stmt->bindParam (':email', $_POST['email']);
+$stmt->bindParam (':eventID', $event['id']);
+
+$stmt->execute();
+ */
+?>
