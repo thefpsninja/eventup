@@ -1,0 +1,5 @@
+/* Example on how to write towards Boostraps CSS to Overide */
+button, .btn-primary {
+    background-color: #B3997F;
+    border-color: #B3997F;
+}
