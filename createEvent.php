@@ -14,8 +14,10 @@
       <div class="modal-body">
         <form action="addNewEvent.php" method="POST">
               <input name="eventName" type="text" placeholder="Event Namn">
-              <textarea name="content" type="text" rows="4" cols="50" form="usrform" style="margin-top: 5px;" placeholder="Information"></textarea>
+              <textarea name="content" type="text" rows="4" cols="50" style="margin-top: 5px;" placeholder="Information"></textarea>
               <input name="dates" type="text" placeholder="Datum">
+              <input name="category" type="text" placeholder="Kategori">
+              <input name="images" type="text" placeholder="ImageURL">
               <button style="width: 200px; margin: auto;" type="submit" class="btn-success btn">Skapa event</button>
         </form>
       </div>
