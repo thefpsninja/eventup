@@ -1,8 +1,10 @@
 <?
 require ('database.php');
+?>
 <div class="contact-clean">
     <!-- formen med back-end-validation: -->
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+    <form method="post" action="insert.php">
+    <!-- action="<?php //echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" -->
 
         <h2 class="text-center">Jag vill vara med!</h2>
 
@@ -30,9 +32,7 @@ require ('database.php');
             ?>
         </div>
     <div class="form-group">
-        <button action="insert.php" class="btn btn-primary" type="submit">Skicka</button>
+        <button  class="btn btn-primary" type="submit">Skicka</button>
     </div>
     </form>
 </div>
-
-?>
