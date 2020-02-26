@@ -1,4 +1,6 @@
-button, .btn-primary {
+
+  
+  button, .btn-primary {
         background-color:#B3997F;
         border-color:  #B3997F;
         font-family: Arial, Helvetica, sans-serif;
@@ -25,5 +27,4 @@ button, .btn-primary {
    }
    .btn-primary:hover{
   
-text-decoration: none;
-     }
+text-decoration: none;}
