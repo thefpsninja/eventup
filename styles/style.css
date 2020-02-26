@@ -5,12 +5,13 @@ button, .btn-primary {
         text-align: center;
         font-style: normal;
         font-weight: bold;
+        
     }
     .btn-secondary{
       background-color: #6DA0B3;
       font-family: Arial, Helvetica, sans-serif;
       text-align: center;
-      border-color:lawngreen;
+      border-color:transparent;
       font-weight: bold;
    }
     h2, h4{
@@ -36,3 +37,4 @@ button, .btn-primary {
     background-color: teal;
     border-color: thistle;
   }
+  
