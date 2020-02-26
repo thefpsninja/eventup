@@ -6,20 +6,55 @@
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Create Event Modal</h4>
+        <h4 class="modal-title">Skapa ett event</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
-
+      
       <!-- Modal body -->
       <div class="modal-body">
-        <form action="addNewEvent.php" method="POST">
-              <input name="eventName" type="text" placeholder="Event Namn">
-              <textarea name="content" type="text" rows="4" cols="50" style="margin-top: 5px;" placeholder="Information"></textarea>
-              <input name="dates" type="text" placeholder="Datum">
-              <input name="category" type="text" placeholder="Kategori">
-              <input name="images" type="text" placeholder="ImageURL">
-              <button style="width: 200px; margin: auto;" type="submit" class="btn-success btn">Skapa event</button>
-        </form>
+        <div class="register-photo">
+        <div class="form-container">
+
+          <div class="image-holder"></div>
+
+            <form action="addNewEvent.php" method="POST">
+
+              <div class="form-group">
+                <input class="form-control" name="eventName" placeholder="Event Namn" type="text" />
+              </div>
+
+              <div class="form-group">
+              <textarea class="form-control" name="content" style="margin-top: 5px;" rows="4" placeholder="Information"></textarea>
+              </div>
+
+              <div class="form-group">
+                <input class="form-control" type="date" name="dates" placeholder="ÅÅÅÅ-MM-DD" />
+              </div>
+
+              <div class="form-group">
+                <label>Välj ett kategori för eventet</label>
+                <select class="form-control" name="category">
+                  <optgroup label="Kategori">
+                    <option value="Möte">Möte</option>
+                    <option value="Fika">Fika</option>
+                    <option value="Party">Party</option>
+                    <option value="Anime">Anime</option>
+                    <option value="Gaming">Gaming</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <input class="form-control" type="url" name="images" placeholder="Image URL" />
+              </div>
+
+              <div class="form-group">
+                <button class="btn btn-primary btn-block" type="submit" class="btn-success btn">Skapa event</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
       </div>
 
       <!-- Modal footer -->
