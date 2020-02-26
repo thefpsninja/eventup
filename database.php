@@ -19,7 +19,7 @@ catch(PDOException $e)
     echo $sql . "<br>" . $e->getMessage();
     }
 
-$conn = null;
+ $conn = null;
 ?>
 
 
@@ -122,5 +122,5 @@ catch(PDOException $e)
 echo $e->getMessage();
 }
 
-$conn = null;
+// $conn = null;
 ?>
