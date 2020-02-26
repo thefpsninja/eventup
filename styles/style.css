@@ -1,20 +1,18 @@
-
-  
-  button, .btn-primary {
+button, .btn-primary {
         background-color:#B3997F;
         border-color:  #B3997F;
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
-        
-        
+        font-style: normal;
+        font-weight: bold;
     }
     .btn-secondary{
       background-color: #6DA0B3;
       font-family: Arial, Helvetica, sans-serif;
       text-align: center;
-      border-color: lawngreen;
-      
-    }
+      border-color:lawngreen;
+      font-weight: bold;
+   }
     h2, h4{
      color:#4289BE;
    }
@@ -24,7 +22,17 @@
    }
    button, .btn-success{
      background-color:  #6DA0B3;
+     border-color: transparent;
    }
    .btn-primary:hover{
-  
-text-decoration: none;}
+     background-color: gray;
+     border-color: grey;
+  }
+  .btn-danger:hover{
+    background-color: teal;
+    border-color: wheat;
+  }
+  .btn-success:hover{
+    background-color: teal;
+    border-color: thistle;
+  }
