@@ -3,9 +3,10 @@
 require('database.php');
 
 if($conn->connect_error){
-  // echo "Oops något gick fel här!";
+  echo "Oops något gick fel här!";
 } else {
-  // echo "Nytt event skapat!";
+  header ("Location: index.php");
+  
   $userID = 1;
   $sql = "INSERT INTO events (eventName, content, dates, category, images, userID)
   VALUES (:eName, :eContent, :eDates, :eCategory, :eImages, $userID)";
@@ -19,6 +20,6 @@ if($conn->connect_error){
   $stmt->bindParam(':eImages', $_POST['images']);
   // $stmt->bindParam(':eUserID', $_POST['userID']);
   
-  $stmt->execute();
-}
+  $stmt->execute();}
+
 
