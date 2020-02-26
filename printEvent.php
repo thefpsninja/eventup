@@ -30,10 +30,12 @@ foreach($eventPosts as $event) :
           $stmt->execute();
           $participants = $stmt->fetchAll(PDO::FETCH_ASSOC);
           ?>
+          <h3 style="text-align: center;">Gästlista</h3>
           <?
           $amount = 0;
           foreach($participants as $participant) : 
-              if($event['id'] == $participant['eventID']) : ?> <p style="padding: 5px; font-weight: 400;">
+              if($event['id'] == $participant['eventID']) : ?> 
+              <p style="padding: 5px; font-weight: 400;">
                   <strong> Namn: </strong><? echo $participant['participantName']; ?>  
                   <br>
                   <strong>Email: </strong> <? echo $participant['participantEmail']; ?> <hr style="width: 75%; border-color: black;"></p>
