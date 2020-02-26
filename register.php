@@ -26,7 +26,7 @@
                 <input class="form-control" type="password" name="password" placeholder="Lösenord" />
               </div>
               <div class="form-group">
-                <input class="form-control" type="password" name="password-repeat" placeholder="Lösenord (uprepa)" />
+                <input class="form-control" type="password" name="password-repeat" placeholder="Upprepa lösenordet" />
               </div>
               <div class="form-group">
                 <div class="form-check">
