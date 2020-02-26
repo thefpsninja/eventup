@@ -3,7 +3,7 @@ require ('database.php');
 ?>
 <div class="contact-clean">
     <!-- formen med back-end-validation: -->
-    <form method="post" action="insert.php">
+    <form method="post" action="addNewParticipant.php">
     <!-- action="<?php //echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" -->
 
         <h2 class="text-center">Jag vill vara med!</h2>
@@ -30,6 +30,7 @@ require ('database.php');
             $emailErr = "Ange en korrekt e-postadress."; 
             } */
             ?>
+            <input type="hiddens" name="eventID" value="<? echo $event['id']; ?>">
         </div>
     <div class="form-group">
         <button  class="btn btn-primary" type="submit">Skicka</button>
