@@ -30,7 +30,7 @@ require ('database.php');
             $emailErr = "Ange en korrekt e-postadress."; 
             } */
             ?>
-            <input type="hiddens" name="eventID" value="<? echo $event['id']; ?>">
+            <input type="hidden" name="eventID" value="<? echo $event['id']; ?>">
         </div>
     <div class="form-group">
         <button  class="btn btn-primary" type="submit">Skicka</button>
