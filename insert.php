@@ -1,7 +1,11 @@
 <?
 require ('database.php');
-$sql = "INSERT INTO participant (participantName, participantEmail) VALUES ('$participantName', '$participantEmail')";
-//'$eventID'
+$participantName=$_POST['participantName'];
+$participantEmail=$_POST['participantEmail'];
+
+$sql = "INSERT INTO participant (participantName, participantEmail) 
+VALUES ('$participantName', '$participantEmail')";
+
 //$conn->exec($sql);
 
 if($conn->connect_error){
