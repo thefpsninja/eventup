@@ -6,7 +6,7 @@ require('database.php');
 if($conn->connect_error){
 echo " Oops! You have an ERROR ";
 } else {
-echo " Yes! A new participant was added! ";
+header ("Location: index.php");
 
 // $eventID = $event['id'];
 
