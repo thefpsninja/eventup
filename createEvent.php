@@ -17,35 +17,48 @@
 
           <div class="image-holder"></div>
 
-            <form action="addNewEvent.php" method="POST">
+            <form action="addNewEvent.php" method="POST" data-bss-recipient="e1dfaaece55c83f7fd015f6f4fb74d94">
 
               <div class="form-group">
-                <input class="form-control" name="eventName" placeholder="Event Namn" type="text" />
+                <input type="text" data-toggle="tooltip" class="form-control" name="eventName" placeholder="Event namn" autofocus required title="Ange event namn" />
               </div>
 
               <div class="form-group">
-              <textarea class="form-control" name="content" style="margin-top: 5px;" rows="4" placeholder="Information"></textarea>
-              </div>
-
-              <div class="form-group">
-                <input class="form-control" type="date" name="dates" placeholder="ÅÅÅÅ-MM-DD" />
+                <textarea data-toggle="tooltip" class="form-control" name="content" placeholder="Beskriv eventet" rows="4" title="Skriv något om eventet" spellcheck="true" autofocus required></textarea>
               </div>
 
               <div class="form-group">
                 <label>Välj ett kategori för eventet</label>
-                <select class="form-control" name="category">
-                  <optgroup label="Kategori">
+                <select class="form-control" autofocus required title="Ange event-kategoriet" name="category">
+                  <optgroup label="Kategorier" >
                     <option value="Möte">Möte</option>
                     <option value="Fika">Fika</option>
+                    <option value="Musik">Musik</option>
                     <option value="Party">Party</option>
-                    <option value="Anime">Anime</option>
                     <option value="Gaming">Gaming</option>
                   </optgroup>
                 </select>
               </div>
 
               <div class="form-group">
-                <input class="form-control" type="url" name="images" placeholder="Image URL" />
+                <label>Ange datum och tid för eventet</label>
+                
+                <div class="col float-left" style="width: 50%;">
+                  <input data-toggle="tooltip" class="form-control" type="date" name="dates" required title="Ange datum för eventet" placeholder="ÅÅÅÅ-MM-DD" />
+                </div>
+
+                <div class="col float-right" style="width: 50%;">
+                    <!-- <input data-toggle="tooltip" class="form-control" type="time" name="time" required title="Ange tiden för eventet" placeholder="hh-mm" /> -->
+                </div>
+              </div>
+
+              <div class="form-group">
+
+                <label>Ladda upp en event-bild eller skriv URL-adressen till en bild på internet.</label>
+                
+                <!-- <input type="file" data-toggle="tooltip" name="images-files" accept="image/*" title="Ladda upp bilden till eventet" /> -->
+                
+                <input type="url" data-toggle="tooltip" class="form-control" name="images" placeholder="Bildens URL-adress" autofocus title="Ange URL-adressen till bilden" />
               </div>
 
               <div class="form-group">
@@ -59,7 +72,7 @@
 
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Stäng</button>
       </div>
 
     </div>
