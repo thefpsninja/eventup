@@ -11,24 +11,25 @@
 
       <!-- Modal body -->
       <div class="modal-body">
+
         <div class="login-clean">
-          <form method="post">
-            <h2 class="sr-only">Logga in</h2>
-            <div class="illustration">
-              <i class="icon ion-ios-navigate"></i>
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-control" name="email" placeholder="Email" />
-            </div>
-            <div class="form-group">
-              <input type="password" class="form-control" name="password" placeholder="Lösenord" />
-            </div>
-            <div class="form-group">
-              <button class="btn btn-primary btn-block" type="submit">Logga in</button>
-            </div>
-            <a class="forgot" href="#">Har du glömt din e-postadress eller ditt lösenord?</a>
-          </form>
-</div>
+          <form data-bss-recipient="e1dfaaece55c83f7fd015f6f4fb74d94">
+              <h2 class="sr-only">Login Form</h2>
+              <div class="illustration">
+                <i class="icon ion-ios-navigate"></i>
+              </div>
+              <div class="form-group">
+                <input type="email" data-toggle="tooltip" class="form-control" name="email" placeholder="Email" required title="Ange ditt email-adress, t.ex.: namn@domän.se" />
+              </div>
+              <div class="form-group">
+                <input type="password" data-toggle="tooltip" class="form-control" name="password" placeholder="Lösenord" required autofocus />
+              </div>
+              <div class="form-group">
+                <button class="btn btn-primary btn-block" type="submit">Logga in</button>
+              </div>
+              <a class="forgot" href="#">Forgot your email or password?</a>
+            </form>
+        </div>
       </div>
 
       <!-- Modal footer -->
