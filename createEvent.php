@@ -20,7 +20,7 @@
             <form action="addNewEvent.php" method="POST" data-bss-recipient="e1dfaaece55c83f7fd015f6f4fb74d94">
 
               <div class="form-group">
-                <input type="text" data-toggle="tooltip" class="form-control" name="eventName" placeholder="Event namn" autofocus required title="Ange event namn" />
+                <input type="text" data-toggle="tooltip" class="form-control" name="eventName" placeholder="Event namn" autofocus required title="Ange event namn" maxlength="30" />
               </div>
 
               <div class="form-group">
@@ -41,16 +41,19 @@
               </div>
 
               <div class="form-group">
+
                 <label>Ange datum och tid för eventet</label>
-                
-                <div class="col float-left" style="width: 50%;">
+                <div class="form-group">
+                <div class="col float-left" style="width: 49%;">
                   <input data-toggle="tooltip" class="form-control" type="date" name="dates" required title="Ange datum för eventet" placeholder="ÅÅÅÅ-MM-DD" />
                 </div>
 
-                <div class="col float-right" style="width: 50%;">
-                    <!-- <input data-toggle="tooltip" class="form-control" type="time" name="time" required title="Ange tiden för eventet" placeholder="hh-mm" /> -->
+                <div class="col float-right" style="width: 49%;">
+                    <input data-toggle="tooltip" class="form-control" type="time" name="dates" required title="Ange tiden för eventet" placeholder="hh-mm" />
+                </div>
                 </div>
               </div>
+
 
               <div class="form-group">
 
