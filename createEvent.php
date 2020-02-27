@@ -49,7 +49,7 @@
                 </div>
 
                 <div class="col float-right" style="width: 49%;">
-                    <input data-toggle="tooltip" class="form-control" type="time" name="dates" required title="Ange tiden för eventet" placeholder="hh-mm" />
+                    <!-- <input data-toggle="tooltip" class="form-control" type="time" name="dates" required title="Ange tiden för eventet" placeholder="hh-mm" /> -->
                 </div>
                 </div>
               </div>
