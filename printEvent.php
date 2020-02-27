@@ -17,7 +17,7 @@ foreach($eventPosts as $event) :
     <div class="w-75 view overlay">
       <li type="button" class="list-group-item d-flex justify-content-between align-items-center mb-1" data-toggle="collapse" href="#collapse<? echo $event['id']; ?>">
       <h4><? echo $event['eventName']; ?></h4>
-      <p><strong>Datum & tid: </strong><? echo date('d-m-y H:i',strtotime($event['dates'])); ?></p>
+      <p><strong>Datum: </strong><? echo date('d-m-yy',strtotime($event['dates'])); ?></p>
       <span class="badge badge-secondary"></span><span class="badge badge-secondary" data-toggle="dropdown">
       <? include 'ParticipantCounter.php'; ?> Deltagare <br> Visa Info
       <span class="caret"></span></button>
